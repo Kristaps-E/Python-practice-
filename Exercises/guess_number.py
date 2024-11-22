@@ -19,7 +19,7 @@ def guessing_game():
 
         while True:
             try:
-                user_guess = int(input("What's your guess from 0 - 100? ")) 
+                user_guess = int(input("What's your guess from 0 - 100? "))
             except ValueError:
                 print("Please use valid input.")
                 continue
