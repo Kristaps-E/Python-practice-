@@ -4,14 +4,8 @@ def my_sum(*numbers):
 
     This function takes any number of numeric arguments
     and returns their total sum.
-
-    Args:
-        *numbers (float or int):
-        A variable number of numeric arguments to be summed.
-
-    Returns:
-        float: The sum of the input numbers.
     """
+
     sum = 0
 
     for number in numbers:
@@ -19,7 +13,19 @@ def my_sum(*numbers):
     return sum
 
 
-give_input = input("What you want to sum: ")
-numbers = tuple(map(float, give_input.split()))
+def main():
+    """
+    The main function to interact with the user and sum the numbers.
 
-print(my_sum(*numbers))
+    This function prompts the user to input numbers separated by spaces,
+    converts them to floats, and then calls the `my_sum` function to calculate
+    the sum of those numbers. The result is printed to the screen.
+    """
+    give_input = input("What you want to sum: ")
+    numbers = tuple(map(float, give_input.split()))
+
+    print(my_sum(*numbers))
+
+
+if __name__ == '__main__':
+    main()
