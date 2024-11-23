@@ -7,7 +7,7 @@ def run_timing():
 
     while True:
         time = input("Enter 10km run time: ")
-        
+
         """Checks if the input is empty (user pressed Enter).
         If true, exits the loop.
         """
